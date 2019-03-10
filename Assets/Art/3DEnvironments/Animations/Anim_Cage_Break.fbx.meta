@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: dab4c324756a743438b875966a71aee7
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bars
+    100004: Base
+    100006: Cage 1
+    100008: ChainLoop
+    100010: Door
+    100012: Keyhole
+    100014: Lock
+    100016: padlock
+    100018: pCylinder10
+    100020: pCylinder11
+    100022: pCylinder12
+    100024: pCylinder13
+    100026: pCylinder14
+    100028: pCylinder15
+    100030: pCylinder16
+    100032: pCylinder17
+    100034: pCylinder18
+    100036: pCylinder19
+    100038: pCylinder20
+    100040: pCylinder21
+    100042: pCylinder22
+    100044: pCylinder23
+    100046: pCylinder24
+    100048: pCylinder25
+    100050: pCylinder26
+    100052: pCylinder27
+    100054: pCylinder28
+    100056: pCylinder29
+    100058: pCylinder6
+    100060: pCylinder7
+    100062: pCylinder9
+    100064: Top
+    400000: //RootNode
+    400002: Bars
+    400004: Base
+    400006: Cage 1
+    400008: ChainLoop
+    400010: Door
+    400012: Keyhole
+    400014: Lock
+    400016: padlock
+    400018: pCylinder10
+    400020: pCylinder11
+    400022: pCylinder12
+    400024: pCylinder13
+    400026: pCylinder14
+    400028: pCylinder15
+    400030: pCylinder16
+    400032: pCylinder17
+    400034: pCylinder18
+    400036: pCylinder19
+    400038: pCylinder20
+    400040: pCylinder21
+    400042: pCylinder22
+    400044: pCylinder23
+    400046: pCylinder24
+    400048: pCylinder25
+    400050: pCylinder26
+    400052: pCylinder27
+    400054: pCylinder28
+    400056: pCylinder29
+    400058: pCylinder6
+    400060: pCylinder7
+    400062: pCylinder9
+    400064: Top
+    2100000: Metal1
+    2100002: lambert1
+    2300000: Base
+    2300002: ChainLoop
+    2300004: Keyhole
+    2300006: Lock
+    2300008: pCylinder10
+    2300010: pCylinder11
+    2300012: pCylinder12
+    2300014: pCylinder13
+    2300016: pCylinder14
+    2300018: pCylinder15
+    2300020: pCylinder16
+    2300022: pCylinder17
+    2300024: pCylinder18
+    2300026: pCylinder19
+    2300028: pCylinder20
+    2300030: pCylinder21
+    2300032: pCylinder22
+    2300034: pCylinder23
+    2300036: pCylinder24
+    2300038: pCylinder25
+    2300040: pCylinder26
+    2300042: pCylinder27
+    2300044: pCylinder28
+    2300046: pCylinder29
+    2300048: pCylinder6
+    2300050: pCylinder7
+    2300052: pCylinder9
+    2300054: Top
+    3300000: Base
+    3300002: ChainLoop
+    3300004: Keyhole
+    3300006: Lock
+    3300008: pCylinder10
+    3300010: pCylinder11
+    3300012: pCylinder12
+    3300014: pCylinder13
+    3300016: pCylinder14
+    3300018: pCylinder15
+    3300020: pCylinder16
+    3300022: pCylinder17
+    3300024: pCylinder18
+    3300026: pCylinder19
+    3300028: pCylinder20
+    3300030: pCylinder21
+    3300032: pCylinder22
+    3300034: pCylinder23
+    3300036: pCylinder24
+    3300038: pCylinder25
+    3300040: pCylinder26
+    3300042: pCylinder27
+    3300044: pCylinder28
+    3300046: pCylinder29
+    3300048: pCylinder6
+    3300050: pCylinder7
+    3300052: pCylinder9
+    3300054: Top
+    4300000: Base
+    4300002: Top
+    4300004: ChainLoop
+    4300006: pCylinder28
+    4300008: pCylinder23
+    4300010: pCylinder24
+    4300012: pCylinder25
+    4300014: pCylinder27
+    4300016: pCylinder29
+    4300018: pCylinder6
+    4300020: pCylinder7
+    4300022: pCylinder9
+    4300024: pCylinder10
+    4300026: pCylinder11
+    4300028: pCylinder12
+    4300030: pCylinder13
+    4300032: pCylinder14
+    4300034: pCylinder15
+    4300036: pCylinder16
+    4300038: pCylinder17
+    4300040: pCylinder18
+    4300042: pCylinder19
+    4300044: pCylinder20
+    4300046: pCylinder21
+    4300048: pCylinder22
+    4300050: pCylinder26
+    4300052: Keyhole
+    4300054: Lock
+    7400000: Break
+    7400002: Closed
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Break
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 51
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Closed
+      takeName: Take 001
+      firstFrame: 29
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
