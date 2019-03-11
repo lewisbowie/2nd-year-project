@@ -180,6 +180,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKeyUp(KeyCode.M))
                 {
                     canFly = false;
+                    canJump = false;
                     anim.SetBool("Fly", false);
                     controller.gravityScale = 5.0f;
                 }
