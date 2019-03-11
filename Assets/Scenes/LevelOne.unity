@@ -1433,6 +1433,11 @@ Prefab:
       propertyPath: m_Name
       value: Knight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: speed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
   m_IsPrefabParent: 0
@@ -2062,6 +2067,93 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 386353218}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &478985217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 478985221}
+  - component: {fileID: 478985220}
+  - component: {fileID: 478985219}
+  - component: {fileID: 478985218}
+  m_Layer: 0
+  m_Name: Plane (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &478985218
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478985217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &478985219
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478985217}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 8ef75f8ee59f3fb469f7059bec188b22, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &478985220
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478985217}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &478985221
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478985217}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.70710677, w: 0}
+  m_LocalPosition: {x: 6.9, y: 3.3, z: 12.4}
+  m_LocalScale: {x: 14.81927, y: 8.669588, z: 9.718985}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 48
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -180}
 --- !u!1 &502502075
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,6 +3578,11 @@ Prefab:
       propertyPath: m_Name
       value: Knight (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: distance
+      value: 0.37
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
   m_IsPrefabParent: 0
@@ -4768,6 +4865,10 @@ Prefab:
       propertyPath: m_Name
       value: MineDoor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1029629727878230, guid: 4cd84b61ca28c754fa317b6c1e2ab13c, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4cd84b61ca28c754fa317b6c1e2ab13c, type: 2}
   m_IsPrefabParent: 0
@@ -5739,6 +5840,11 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: speed
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
@@ -6921,6 +7027,11 @@ Prefab:
     - target: {fileID: 1415453058106126, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
       propertyPath: m_Name
       value: Knight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: distance
+      value: 1.23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
@@ -8487,7 +8598,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1762239293}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.1, y: 7.4, z: 9.2}
+  m_LocalPosition: {x: 3.1, y: 7.4, z: 35.1}
   m_LocalScale: {x: 12.52056, y: 12.520561, z: 12.520561}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10544,7 +10655,7 @@ GameObject:
   - component: {fileID: 2104417175}
   m_Layer: 0
   m_Name: Cube (38)
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10556,7 +10667,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2104417173}
   m_LocalRotation: {x: -0, y: -0, z: -0.9125382, w: 0.40899158}
-  m_LocalPosition: {x: 4.3, y: 23.6, z: -7.6932964}
+  m_LocalPosition: {x: 4.383, y: 23.693, z: -7.6932964}
   m_LocalScale: {x: 4.305191, y: 0.78151023, z: 1}
   m_Children: []
   m_Father: {fileID: 811772346}
