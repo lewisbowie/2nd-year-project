@@ -112,7 +112,9 @@ public class PlayerController : MonoBehaviour
     {
         moveDirection = Input.GetAxis("Horizontal");
         controller.velocity = new Vector2(moveDirection * speed, controller.velocity.y);
-        anim.SetFloat("Speed", controller.velocity.x);
+        anim.SetFloat("Speed", Mathf.Abs(controller.velocity.x));
+       // anim.SetFloat("Speed", -controller.velocity.x);
+        
 
     }
 
@@ -341,6 +343,7 @@ public class PlayerController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+        Debug.Log(scale.x);
     }
  
 } 
