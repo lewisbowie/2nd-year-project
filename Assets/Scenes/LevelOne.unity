@@ -137,6 +137,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &25000568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 25000569}
+  m_Layer: 0
+  m_Name: AttackRangeMelee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &25000569
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25000568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.15, y: -0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 363726192}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &63717076
 Prefab:
   m_ObjectHideFlags: 0
@@ -1438,6 +1466,38 @@ Prefab:
       propertyPath: speed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy1
+      value: 
+      objectReference: {fileID: 1250494239}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy2
+      value: 
+      objectReference: {fileID: 2107629537}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy3
+      value: 
+      objectReference: {fileID: 4882271}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy4
+      value: 
+      objectReference: {fileID: 2006130837}
+    - target: {fileID: 1415453058106126, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864296932956336, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451239589215510, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
   m_IsPrefabParent: 0
@@ -1896,6 +1956,8 @@ Transform:
   - {fileID: 285255439}
   - {fileID: 77102689}
   - {fileID: 1766006654}
+  - {fileID: 25000569}
+  - {fileID: 396113148}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2068,6 +2130,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 386353218}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &396113147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 396113148}
+  m_Layer: 0
+  m_Name: AttackRangeBreath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &396113148
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 396113147}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.14, y: -0.4, z: 0}
+  m_LocalScale: {x: 1.0000025, y: 1.0000036, z: 1.0000036}
+  m_Children: []
+  m_Father: {fileID: 363726192}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &478985217
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,6 +3774,38 @@ Prefab:
         type: 2}
       propertyPath: distance
       value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy1
+      value: 
+      objectReference: {fileID: 1250494239}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy2
+      value: 
+      objectReference: {fileID: 2107629537}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy3
+      value: 
+      objectReference: {fileID: 4882271}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy4
+      value: 
+      objectReference: {fileID: 2006130837}
+    - target: {fileID: 1415453058106126, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864296932956336, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451239589215510, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
@@ -6093,6 +6215,38 @@ Prefab:
       propertyPath: speed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy1
+      value: 
+      objectReference: {fileID: 1250494239}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy2
+      value: 
+      objectReference: {fileID: 2107629537}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy3
+      value: 
+      objectReference: {fileID: 4882271}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy4
+      value: 
+      objectReference: {fileID: 2006130837}
+    - target: {fileID: 1415453058106126, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864296932956336, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451239589215510, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
   m_IsPrefabParent: 0
@@ -7321,6 +7475,38 @@ Prefab:
         type: 2}
       propertyPath: distance
       value: 1.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy2
+      value: 
+      objectReference: {fileID: 2107629537}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy3
+      value: 
+      objectReference: {fileID: 4882271}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy4
+      value: 
+      objectReference: {fileID: 2006130837}
+    - target: {fileID: 114040783948956066, guid: b663c19a21e0b421dbcd4d5349ad5d24,
+        type: 2}
+      propertyPath: Enemy1
+      value: 
+      objectReference: {fileID: 1250494239}
+    - target: {fileID: 1415453058106126, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864296932956336, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451239589215510, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b663c19a21e0b421dbcd4d5349ad5d24, type: 2}
@@ -10475,20 +10661,26 @@ MonoBehaviour:
   flyingTime: 1
   PlayerTakesDamage: {fileID: 2032426078}
   Knight: {fileID: 2100813690}
+  enemies: []
   JumpActivates: 1
   FlyActivates: 3
   BreathAttackActivates: 0
   Health: 200
-  AttackRangeMelee: 2
   MeleeDamage: 20
   BreathDamage: 20
   DelayAttack: 2
-  AttackRangeBreath: 4
+  AttackRangeBreath: 1
+  AttackRangeMelee: 1
   anim: {fileID: 2032426078}
   CollectibleNumber: {fileID: 0}
   Collectible: {fileID: 720746591}
   Chest: {fileID: 0}
   Range: 0
+  AttackRangeMelee2: {fileID: 25000569}
+  AttackRangeBreath2: {fileID: 396113148}
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 512
   GroundCheck: {fileID: 285255439}
 --- !u!212 &2032426077
 SpriteRenderer:
