@@ -8,6 +8,7 @@ public class Button2 : MonoBehaviour {
     public Animator anim;
     public Animator anim2;
     public Animator anim3;
+    public Animator anim4;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,7 +18,7 @@ public class Button2 : MonoBehaviour {
             anim.Play("LiftMovement2");
             anim2.Play("LeverMovement");
             anim3.Play("CageFall");
-
+            anim4.Play("BarrierBreak");
 
         }
     }

@@ -7,6 +7,7 @@ public class Button5 : MonoBehaviour {
     [Header("Animations")]
     public Animator anim;
     public Animator anim2;
+    public Animator anim3;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +16,7 @@ public class Button5 : MonoBehaviour {
         {
             anim.Play("LiftMovement4");
             anim2.Play("LeverMovement");
+            anim3.Play("BarrierBreak2");
 
 
         }
