@@ -13,7 +13,7 @@ public class Button3 : MonoBehaviour {
 
         if (collision.gameObject.tag == "Player")
         {
-            anim.Play("LiftMovement3");
+            anim.Play("LiftAnim4");
             anim2.Play("LeverMovement");
 
 
