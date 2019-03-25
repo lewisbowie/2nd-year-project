@@ -1,15 +1,20 @@
 fileFormatVersion: 2
-guid: 7a7175e70d8b19944af78ce4904b989a
+guid: 74c549f4b3cb9b14bb49a30ad05694b6
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: 'Material #50'
+    2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
     4300000: BARREL
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 648de0ff461a4b243a612166f0837070, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
