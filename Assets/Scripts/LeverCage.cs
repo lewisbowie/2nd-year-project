@@ -12,7 +12,9 @@ public class LeverCage : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            anim.Play("MiniCage");
+            
+                anim.Play("MiniCage");
+            
         }
     }
 }

@@ -19,7 +19,7 @@ public class Death : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Death")
         {
-            SceneManager.LoadScene("LevelOne");
+            SceneManager.LoadScene("Lvl1(V2)");
         }
     }
 }

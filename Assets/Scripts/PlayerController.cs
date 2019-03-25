@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
         Stage1 = true;
         Stage2activate = false;
         Stage3activate = false;
+        anim.SetLayerWeight(0, 1.0f);
 
         CollectiblesCollected();
     }
@@ -168,11 +169,14 @@ public class PlayerController : MonoBehaviour
         {
             Stage1 = false;
             Stage2activate = true;
+            
 
             if (Stage2activate)
             {
                 flyingTime = 2f;
                 speed = 6f;
+                anim.SetLayerWeight(0, 0.0f);
+                anim.SetLayerWeight(1, 1.0f);
 
                 if (Input.GetKeyDown(KeyCode.M) && !canFly)
                 {
@@ -239,6 +243,8 @@ public class PlayerController : MonoBehaviour
             {
                 flyingTime = 5f;
                 speed = 10f;
+                anim.SetLayerWeight(1, 0.0f);
+                anim.SetLayerWeight(2 , 1.0f);
 
                 if (Input.GetKeyDown(KeyCode.X))
                 {
