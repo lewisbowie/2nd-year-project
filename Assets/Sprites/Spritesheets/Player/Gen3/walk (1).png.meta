@@ -1,13 +1,14 @@
 fileFormatVersion: 2
-guid: d28c3759a81859a45a92d9627c3dd444
+guid: 48a0d5ca369a13a4dad4ecce99f8af04
 TextureImporter:
   fileIDToRecycleName:
-    21300000: greenslime_idle_walk_sprite_0
-    21300002: greenslime_idle_walk_sprite_1
-    21300004: greenslime_idle_walk_sprite_2
-    21300006: greenslime_idle_walk_sprite_3
-    21300008: greenslime_idle_walk_sprite_4
-    21300010: greenslime_idle_walk_sprite_5
+    21300000: walk (1)_0
+    21300002: walk (1)_1
+    21300004: walk (1)_2
+    21300006: walk (1)_3
+    21300008: walk (1)_4
+    21300010: walk (1)_5
+    21300012: walk (1)_6
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -49,7 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,121 +89,141 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: greenslime_idle_walk_sprite_0
+      name: walk (1)_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 547
-        width: 296
-        height: 193
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 11
+        y: 560
+        width: 306
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a166778b6b1a3124b8ef56670a445e6a
+      spriteID: 80f00305f3008c8419bfee26522778c6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: greenslime_idle_walk_sprite_1
+      name: walk (1)_1
       rect:
         serializedVersion: 2
-        x: 443
-        y: 547
-        width: 317
-        height: 166
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de8846a4b88772f4f8ddaaba53c373b8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenslime_idle_walk_sprite_2
-      rect:
-        serializedVersion: 2
-        x: 848
-        y: 551
-        width: 372
-        height: 131
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14c1484e1cbdf184bacb695d1d7628f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenslime_idle_walk_sprite_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 131
-        width: 296
-        height: 194
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c0f3ebb7652a4141b3af6428fdd7d83
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenslime_idle_walk_sprite_4
-      rect:
-        serializedVersion: 2
-        x: 467
-        y: 133
-        width: 293
-        height: 216
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6328b04d1e42e144a9a94af2fa25b932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenslime_idle_walk_sprite_5
-      rect:
-        serializedVersion: 2
-        x: 925
-        y: 132
-        width: 265
+        x: 348
+        y: 555
+        width: 292
         height: 262
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0b7da08879175e4f8498e252f907f35
+      spriteID: 136f51aa42871324aa6e03b5b5acc535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk (1)_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 554
+        width: 273
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561a744a1131e2f4e95e6119793c8b66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk (1)_3
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 560
+        width: 287
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991043bc5c3311c4681b532c375bcc5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk (1)_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 163
+        width: 309
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3021e0503337e8d42a7557882b4afc2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk (1)_5
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 163
+        width: 298
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb22672b0d92c54e9b683e9a30155cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk (1)_6
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 163
+        width: 299
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e77337098a83f4fbb696d3c96f100d
       vertices: []
       indices: 
       edges: []
@@ -210,7 +231,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c6c75953f41d5744587c623446365b7a
+    spriteID: 0a090d0a6a9539e4cb3975f47ab8393a
     vertices: []
     indices: 
     edges: []
