@@ -238,7 +238,7 @@ public class PlayerController : MonoBehaviour
             Stage1 = false;
             Stage2activate = false;
             Stage3activate = true;
-            anim.Play("Evolve");
+            anim.Play("Evolve2");
 
             if (Stage3activate)
             {
@@ -246,6 +246,7 @@ public class PlayerController : MonoBehaviour
                 speed = 10f;
                 anim.SetLayerWeight(1, 0.0f);
                 anim.SetLayerWeight(2 , 1.0f);
+                
 
                 if (Input.GetKeyDown(KeyCode.X))
                 {
@@ -259,6 +260,7 @@ public class PlayerController : MonoBehaviour
                         {
                             BreathAttack(_collider2D.gameObject.transform);
                             break;
+
                         }
                     }
                     //BreathAttack();
