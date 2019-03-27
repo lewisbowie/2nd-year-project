@@ -169,7 +169,7 @@ public class PlayerController : MonoBehaviour
         {
             Stage1 = false;
             Stage2activate = true;
-            
+            anim.Play("Evolve");
 
             if (Stage2activate)
             {
@@ -238,8 +238,9 @@ public class PlayerController : MonoBehaviour
             Stage1 = false;
             Stage2activate = false;
             Stage3activate = true;
+            anim.Play("Evolve");
 
-            if(Stage3activate)
+            if (Stage3activate)
             {
                 flyingTime = 5f;
                 speed = 10f;
