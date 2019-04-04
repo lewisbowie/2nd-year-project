@@ -67,7 +67,7 @@ public class KnightAI : MonoBehaviour
         //uses raycast to detect when platform edge is beside the enemy.
         if (CheckGround)
         {
-            RaycastHit2D groundInfo = Physics2D.Raycast(GroundDetection.position, Vector2.down, distance);
+            RaycastHit2D groundInfo = Physics2D.Raycast(GroundDetection.position, /*Vector2.down*/ -transform.up, distance);
 
             if (groundInfo.collider == false)
             {
