@@ -220,7 +220,8 @@ public class PlayerController : MonoBehaviour
                     {
                         foreach (Collider2D _collider2D in _colliders)
                         {
-                            MeleeAttack(_collider2D.gameObject.transform);
+                            StartCoroutine(AttackWait(_collider2D.gameObject.transform, false));
+                           // MeleeAttack(_collider2D.gameObject.transform);
                             break;
                         }
                     }
@@ -258,7 +259,7 @@ public class PlayerController : MonoBehaviour
                     {
                         foreach (Collider2D _collider2D in _colliders)
                         {
-                            BreathAttack(_collider2D.gameObject.transform);
+                            StartCoroutine(AttackWait(_collider2D.gameObject.transform, true));
                             break;
 
                         }
@@ -343,10 +344,11 @@ public class PlayerController : MonoBehaviour
 
         if (GameObject.FindGameObjectWithTag("Enemy"))
         {
-           // if (distancefromPlayerMelee < AttackRangeMelee)
-           // {
+            // if (distancefromPlayerMelee < AttackRangeMelee)
+            // {
 
-                //Knight.SendMessage("TakeDamage", MeleeDamage);
+            //Knight.SendMessage("TakeDamage", MeleeDamage);
+            
                 enemy.SendMessage("TakeDamage", MeleeDamage);
                 print("melleee");
                 lastAttackMelee = Time.time;
@@ -356,6 +358,20 @@ public class PlayerController : MonoBehaviour
        
 
     }
+  
+
+    IEnumerator AttackWait(Transform enemy, bool flyingattack)
+    {
+        yield return new WaitForSeconds(1);
+        if (flyingattack)
+        {
+            BreathAttack(enemy);
+        }
+        else
+        {
+            MeleeAttack(enemy);
+        }
+    }
 
     public void BreathAttack(Transform enemy)
     {
@@ -363,10 +379,11 @@ public class PlayerController : MonoBehaviour
 
         if (GameObject.FindGameObjectWithTag("Enemy"))      
         {
-           // //if(distancefromPlayerBreath < AttackRangeBreath)
+            // //if(distancefromPlayerBreath < AttackRangeBreath)
             //{
-               enemy.SendMessage("TakeDamage", BreathDamage);
-                LastAttackBreath = Time.time;
+            StartCoroutine("BreathWait");
+            enemy.SendMessage("TakeDamage", BreathDamage);
+            LastAttackBreath = Time.time;
            // }
         }
     }
