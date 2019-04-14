@@ -5,11 +5,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: 'Material #50'
+    2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
     4300000: HOUSE_3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 3ffb4ada2e801c049945cd44b1730db5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

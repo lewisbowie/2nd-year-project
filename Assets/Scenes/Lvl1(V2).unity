@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311912, g: 0.3807398, b: 0.3587271, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15844,6 +15844,11 @@ Prefab:
       propertyPath: m_Name
       value: House_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23937010889197184, guid: 84260ca89b47ef743b7049c4ffd86849,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ffb4ada2e801c049945cd44b1730db5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84260ca89b47ef743b7049c4ffd86849, type: 2}
   m_IsPrefabParent: 0
@@ -31831,6 +31836,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23937010889197184, guid: 84260ca89b47ef743b7049c4ffd86849,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ffb4ada2e801c049945cd44b1730db5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84260ca89b47ef743b7049c4ffd86849, type: 2}
   m_IsPrefabParent: 0
@@ -35217,6 +35227,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23735711848611886, guid: 4e01eeb8842ac854fad8f5c5c71cd986,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ffb4ada2e801c049945cd44b1730db5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e01eeb8842ac854fad8f5c5c71cd986, type: 2}
   m_IsPrefabParent: 0
@@ -128344,6 +128359,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23226011127216114, guid: 1bb0cd4efeace444882f7e1cf2c16c5f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ffb4ada2e801c049945cd44b1730db5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bb0cd4efeace444882f7e1cf2c16c5f, type: 2}
   m_IsPrefabParent: 0
