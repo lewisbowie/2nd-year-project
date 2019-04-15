@@ -116,7 +116,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveDirection = Input.GetAxis("Horizontal");
+       moveDirection = Input.GetAxis("Horizontal");
+     
         controller.velocity = new Vector2(moveDirection * speed, controller.velocity.y);
         anim.SetFloat("Speed", Mathf.Abs(controller.velocity.x));
        // anim.SetFloat("Speed", -controller.velocity.x);
@@ -151,7 +152,7 @@ public class PlayerController : MonoBehaviour
 
 
             //Sets jump on space
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 if (canJump)
                 {
@@ -178,7 +179,7 @@ public class PlayerController : MonoBehaviour
                 anim.SetLayerWeight(0, 0.0f);
                 anim.SetLayerWeight(1, 1.0f);
 
-                if (Input.GetKeyDown(KeyCode.M) && !canFly)
+                if (Input.GetKeyDown(KeyCode.Space) && !canFly)
                 {
                     Fly();
                     anim.SetBool("Fly", true);
@@ -186,7 +187,7 @@ public class PlayerController : MonoBehaviour
                 }
 
                 //returns if M is released flying stops
-                if (Input.GetKeyUp(KeyCode.M))
+                if (Input.GetKeyUp(KeyCode.Space))
                 {
                     canFly = false;
                     canJump = false;
@@ -210,7 +211,7 @@ public class PlayerController : MonoBehaviour
                     }
                 }
 
-                if (Input.GetKeyDown(KeyCode.Z))
+                if (Input.GetKeyDown(KeyCode.A))
                 {
                     anim.SetTrigger("Melee");
                     bool canAttack = Physics2D.OverlapCircle(AttackRangeMelee2.position, 0.8f, whatIsEnemy);
@@ -249,7 +250,7 @@ public class PlayerController : MonoBehaviour
                 anim.SetLayerWeight(2 , 1.0f);
                 
 
-                if (Input.GetKeyDown(KeyCode.X))
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     anim.SetTrigger("Breath");
                     bool canAttack = Physics2D.OverlapCircle(AttackRangeBreath2.position, 0.8f, whatIsEnemy);
@@ -272,7 +273,7 @@ public class PlayerController : MonoBehaviour
             //can fly for 10 seconds
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             ChestOpen();
         }
