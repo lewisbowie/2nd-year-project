@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
 
 
             //Sets jump on space
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 if (canJump)
                 {
@@ -378,11 +378,11 @@ public class PlayerController : MonoBehaviour
     {
         float distancefromPlayerBreath = Vector2.Distance(transform.position, enemy.position);
 
-        if (GameObject.FindGameObjectWithTag("Enemy") != null)      
+        if (GameObject.FindGameObjectWithTag("Enemy"))      
         {
             // //if(distancefromPlayerBreath < AttackRangeBreath)
             //{
-            StartCoroutine("BreathWait");
+           // StartCoroutine("BreathWait");
             enemy.SendMessage("TakeDamage", BreathDamage);
             LastAttackBreath = Time.time;
            // }
