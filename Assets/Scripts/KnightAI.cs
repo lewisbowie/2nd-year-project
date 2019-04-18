@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class KnightAI : MonoBehaviour
 {
+    [SerializeField]
     private bool chase;
     [Header("Speed of character")]
     public float speed;
@@ -18,6 +19,7 @@ public class KnightAI : MonoBehaviour
     //private variables
     private Vector2 direction = new Vector2(0, 1);
     private bool moveRight = true;
+    [SerializeField]
     private bool Move = true;
     private Vector3 newXPosition;
     private bool CheckGround = true;
@@ -43,13 +45,24 @@ public class KnightAI : MonoBehaviour
         Move = true;
         CheckWall = true;
         CheckGround = true;
-
+        chase = false;
     }
 
     // Update is called once per frame
     public void Update()
     {
+        if (chase)
+        {
+            Move = false;
+            MovetoPlayer();
+           
+        }
+        if (!chase) 
+        {
+            Move = true;
 
+        }
+        Debug.Log(chase);
 
         //moves enemy along platform
         if (Move)
@@ -59,7 +72,7 @@ public class KnightAI : MonoBehaviour
         if (delay)
         {
             StartCoroutine("delayNormal");
-            Move = true;
+           // Move = true;
             CheckWall = true;
             CheckGround = true;
         }
@@ -84,7 +97,8 @@ public class KnightAI : MonoBehaviour
             }
 
         }
-        if (CheckWall)
+
+        if (CheckWall && Move)
         {
             RaycastHit2D Wall = Physics2D.Raycast(WallDetection.position, direction, distance);
 
@@ -116,18 +130,24 @@ public class KnightAI : MonoBehaviour
         if (distancefromPlayer < AttackRangeMelee)
         {
             chase = true;
-           // MovetoPlayer();
+            Move = false;
+            // MovetoPlayer();
             if (Time.time > lastAttack + DelayAttack)
             {
                 Player.SendMessage("TakeDamage", damage);
                 lastAttack = Time.time;
                 print("attaaaaaa");
-                
+
             }
 
         }
+        else
+        {
+            chase = false;
+            Move = true;
+        }
 
-        if (distancefromPlayer < minDistance)
+       if (distancefromPlayer < minDistance)
         {
             //sets movement and wall and ground checks to false
             Move = false;
@@ -135,7 +155,7 @@ public class KnightAI : MonoBehaviour
             CheckGround = false;
 
             //calls function to move enemy towards the player
-            MovetoPlayer();
+            //MovetoPlayer();
             //delay = false;
             //delayFloat = Time.deltaTime + 3;
 
@@ -157,11 +177,44 @@ public class KnightAI : MonoBehaviour
         transform.localScale = scale;
     }
 
+    void FlipMovement()
+    {
+        speed *= -1;
+    }
+
     void MovetoPlayer()
     {
         //moves the enemy to the player when in range
        
-        transform.position = Vector2.MoveTowards(transform.position, new Vector2(Player.position.x, transform.position.y), speed * Time.deltaTime);
+        
+
+        float horizontalDifference = this.transform.position.x - Player.transform.position.x;
+        float verticalDifference = this.transform.position.y - Player.transform.position.y;
+
+        PlayerController PC = Player.gameObject.GetComponent<PlayerController>();
+      
+
+            if (((speed > 0f) && (horizontalDifference > 0f)) || ((speed < 0f) && (horizontalDifference < 0f)))
+            {
+
+                //Rotate();
+                //PlayerController pC = Player.gameObject.GetComponent<PlayerController>();
+                
+            if ((moveRight && (speed < 0f)) || (!moveRight && (speed > 0f)))
+            {
+                FlipMovement();
+
+                
+            }
+
+
+        }//transform.LookAt(Player.position, Vector3.back * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(Player.transform.position.x, transform.position.y), Mathf.Abs(speed * Time.deltaTime));
+
+        print(Vector2.MoveTowards(transform.position, new Vector2(Player.transform.position.x, transform.position.y), speed * Time.deltaTime));
+
+        // transform.LookAt(Player.transform.eulerAngles = new Vector2( 0, 0));
+        // print(Vector2.MoveTowards(transform.position, new Vector2(Player.position.x, transform.position.y), speed * Time.deltaTime));
     }
     void NormalMove()
     {
@@ -177,7 +230,7 @@ public class KnightAI : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Health =- damage;
-        print("ser");
+        
         if (Health <= 0)
         {
             StartCoroutine("Delay");

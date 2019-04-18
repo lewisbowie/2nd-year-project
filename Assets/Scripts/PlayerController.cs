@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private float flyingTimer;
     private int pickedUp;
     private float moveDirection;
-    private bool facingRight;
+    public bool facingRight;
 
     public Animator PlayerTakesDamage;
 
