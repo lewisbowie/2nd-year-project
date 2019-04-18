@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class KnightAI : MonoBehaviour
 {
-
+    private bool chase;
     [Header("Speed of character")]
     public float speed;
     public float distance;
@@ -115,10 +115,14 @@ public class KnightAI : MonoBehaviour
 
         if (distancefromPlayer < AttackRangeMelee)
         {
+            chase = true;
+           // MovetoPlayer();
             if (Time.time > lastAttack + DelayAttack)
             {
                 Player.SendMessage("TakeDamage", damage);
                 lastAttack = Time.time;
+                print("attaaaaaa");
+                
             }
 
         }
