@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 4381032910481254}
   - component: {fileID: 198591907168675686}
   - component: {fileID: 199335983832554180}
+  - component: {fileID: 82173519115575194}
   m_Layer: 0
   m_Name: Fire (2)
   m_TagString: Untagged
@@ -552,8 +553,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1483919292592462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.3, y: 0.45, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -36.125237, y: 3.389448, z: -4.265274}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4107417280357348}
@@ -2153,6 +2154,119 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 191.2, y: 100.00004}
   m_Direction: 0
+--- !u!82 &82173519115575194
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231276717154434}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 81054141a69f6614f98ba1cd185a1d82, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.52
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 4.8
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.21739131
+      value: 1
+      inSlope: -4.601839
+      outSlope: -4.601839
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.43478262
+      value: 0.5
+      inSlope: -1.1504598
+      outSlope: -1.1504598
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.86956525
+      value: 0.25
+      inSlope: -0.28761494
+      outSlope: -0.28761494
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.21747798
+      outSlope: -0.21747798
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.0027777778
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!108 &108164682370063696
 Light:
   m_ObjectHideFlags: 1
@@ -2205,7 +2319,7 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: 1
+    m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -6863,7 +6977,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 364.9}
-  m_ConnectedAnchor: {x: -61.451202, y: 14.798602}
+  m_ConnectedAnchor: {x: -61.451042, y: 14.798602}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6886,7 +7000,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 69.09, y: 0}
-  m_ConnectedAnchor: {x: -61.991028, y: 0.0000063656803}
+  m_ConnectedAnchor: {x: -61.991188, y: 0.000006365696}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6909,7 +7023,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 69.09, y: 0}
-  m_ConnectedAnchor: {x: -48.63422, y: 0.000004969925}
+  m_ConnectedAnchor: {x: -48.634384, y: 0.0000049699415}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6955,7 +7069,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 69.09, y: 0}
-  m_ConnectedAnchor: {x: -59.96415, y: 0.0000061575456}
+  m_ConnectedAnchor: {x: -59.96399, y: 0.0000061575292}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -6978,7 +7092,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 69.09, y: 0}
-  m_ConnectedAnchor: {x: -61.991066, y: 0.0000063656826}
+  m_ConnectedAnchor: {x: -61.990906, y: 0.0000063656657}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -7001,7 +7115,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 69.09, y: 0}
-  m_ConnectedAnchor: {x: -63.34234, y: 0.0000065044396}
+  m_ConnectedAnchor: {x: -63.342503, y: 0.000006504456}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -7024,7 +7138,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 69.09, y: 0}
-  m_ConnectedAnchor: {x: -63.3423, y: 0.0000065044374}
+  m_ConnectedAnchor: {x: -63.34246, y: 0.0000065044533}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

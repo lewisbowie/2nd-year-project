@@ -378,7 +378,7 @@ public class PlayerController : MonoBehaviour
     {
         float distancefromPlayerBreath = Vector2.Distance(transform.position, enemy.position);
 
-        if (GameObject.FindGameObjectWithTag("Enemy"))      
+        if (GameObject.FindGameObjectWithTag("Enemy") != null)      
         {
             // //if(distancefromPlayerBreath < AttackRangeBreath)
             //{
