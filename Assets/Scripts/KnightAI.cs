@@ -62,7 +62,7 @@ public class KnightAI : MonoBehaviour
             Move = true;
 
         }
-        Debug.Log(chase);
+       
 
         //moves enemy along platform
         if (Move)
@@ -136,7 +136,7 @@ public class KnightAI : MonoBehaviour
             {
                 Player.SendMessage("TakeDamage", damage);
                 lastAttack = Time.time;
-                print("attaaaaaa");
+             
 
             }
 
@@ -211,7 +211,7 @@ public class KnightAI : MonoBehaviour
         }//transform.LookAt(Player.position, Vector3.back * Time.deltaTime);
         transform.position = Vector2.MoveTowards(transform.position, new Vector2(Player.transform.position.x, transform.position.y), Mathf.Abs(speed * Time.deltaTime));
 
-        print(Vector2.MoveTowards(transform.position, new Vector2(Player.transform.position.x, transform.position.y), speed * Time.deltaTime));
+
 
         // transform.LookAt(Player.transform.eulerAngles = new Vector2( 0, 0));
         // print(Vector2.MoveTowards(transform.position, new Vector2(Player.position.x, transform.position.y), speed * Time.deltaTime));

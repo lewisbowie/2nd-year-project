@@ -65,7 +65,8 @@ public class PlayerController : MonoBehaviour
     public Transform AttackRangeMelee2;
     public Transform AttackRangeBreath2;
     public LayerMask whatIsEnemy;
-
+    public Canvas GameOver;
+ 
 
     [Header("Checks")]
     public Transform GroundCheck;
@@ -74,7 +75,7 @@ public class PlayerController : MonoBehaviour
     {
         //gets the controller on start
         controller = GetComponent<Rigidbody2D>();
-
+       // GameOver.enabled = false;
 
         facingRight = true;
 
@@ -288,7 +289,7 @@ public class PlayerController : MonoBehaviour
             {
          
                     Instantiate(Collectible, transform.position, transform.rotation);
-                    print("ev");
+                  
 
             }
         }
@@ -329,11 +330,14 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Health -= damage;
+      
         PlayerTakesDamage.Play("PlayerTakesDamage");
-        if(Health <= 0)
+        
+        if (Health <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameOver.gameObject.SetActive(true);
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
     }
@@ -351,7 +355,8 @@ public class PlayerController : MonoBehaviour
             //Knight.SendMessage("TakeDamage", MeleeDamage);
             
                 enemy.SendMessage("TakeDamage", MeleeDamage);
-                print("melleee");
+            
+             
                 lastAttackMelee = Time.time;
                
             //}
@@ -359,8 +364,7 @@ public class PlayerController : MonoBehaviour
        
 
     }
-  
-
+ 
     IEnumerator AttackWait(Transform enemy, bool flyingattack)
     {
         yield return new WaitForSeconds(1);
