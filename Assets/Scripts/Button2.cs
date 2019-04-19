@@ -16,7 +16,7 @@ public class Button2 : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             anim.Play("LiftAnim2");
-            anim2.Play("LeverMovement");
+            anim2.Play("LeverMovement2");
             anim3.Play("CageFall");
             anim4.Play("BarrierBreak");
 
