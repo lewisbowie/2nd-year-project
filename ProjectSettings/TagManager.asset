@@ -11,6 +11,7 @@ TagManager:
   - Chest
   - Death
   - Enemy2
+  - Player3
   layers:
   - Default
   - TransparentFX

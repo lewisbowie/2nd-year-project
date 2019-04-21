@@ -12,7 +12,7 @@ public class Button5 : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player3")
         {
             anim.Play("LiftAnim4");
             anim2.Play("LeverMovement");

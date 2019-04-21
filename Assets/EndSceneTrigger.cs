@@ -16,7 +16,7 @@ public class EndSceneTrigger : MonoBehaviour {
 	}
   void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player3")
         {
             videoPlayer.Play();
             print("playing");

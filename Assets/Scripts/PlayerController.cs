@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private bool Stage2activate;
     private bool Stage3activate;
     private int Stage2 = 3;
-    private int Stage3 = 10;
+    private int Stage3 = 20;
 
     [Header("Player Attributes")]
     public float Health;
@@ -229,28 +229,6 @@ public class PlayerController : MonoBehaviour
                     }
                     //MeleeAttack();
                 }
-            }
-            //first stage can fly for 3 seconds
-            //movement is slower
-        }
-
-        //if picked up 10 collectibles 
-        
-        if (pickedUp >= Stage3)
-        {
-            Stage1 = false;
-            Stage2activate = false;
-            Stage3activate = true;
-            anim.Play("Evolve2");
-
-            if (Stage3activate)
-            {
-                flyingTime = 5f;
-                speed = 10f;
-                anim.SetLayerWeight(1, 0.0f);
-                anim.SetLayerWeight(2 , 1.0f);
-                
-
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     anim.SetTrigger("Breath");
@@ -267,6 +245,27 @@ public class PlayerController : MonoBehaviour
                         }
                     }
                     //BreathAttack();
+                }
+                //first stage can fly for 3 seconds
+                //movement is slower
+            }
+
+        //if picked up 10 collectibles 
+        
+        if (pickedUp >= Stage3)
+        {
+            Stage1 = false;
+            Stage2activate = false;
+            Stage3activate = true;
+            anim.Play("Evolve2");
+
+            if (Stage3activate)
+            {
+                flyingTime = 5f;
+                speed = 10f;
+                anim.SetLayerWeight(1, 0.0f);
+                anim.SetLayerWeight(2 , 1.0f);
+                    gameObject.tag = "Player3"; 
                 }
             }
         
