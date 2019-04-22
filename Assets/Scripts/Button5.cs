@@ -17,7 +17,7 @@ public class Button5 : MonoBehaviour {
             anim.Play("LiftAnim4");
             anim2.Play("LeverMovement");
             anim3.Play("BarrierBreak2");
-
+            anim.enabled = false;
 
         }
     }
