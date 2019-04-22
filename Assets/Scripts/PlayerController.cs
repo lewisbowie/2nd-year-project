@@ -71,6 +71,11 @@ public class PlayerController : MonoBehaviour
     [Header("Checks")]
     public Transform GroundCheck;
 
+	private bool canScale;
+	private float scaleValue;
+	private float scaleX;
+	private float scaleY;
+
     void Start()
     {
         //gets the controller on start
@@ -94,6 +99,11 @@ public class PlayerController : MonoBehaviour
         Stage2activate = false;
         Stage3activate = false;
         anim.SetLayerWeight(0, 1.0f);
+
+		canScale = true;
+		scaleValue = 0.25f;
+		//scaleX = transform.localScale.x;
+		//scaleY = transform.localScale.y;
 
         CollectiblesCollected();
     }
@@ -258,6 +268,21 @@ public class PlayerController : MonoBehaviour
             Stage2activate = false;
             Stage3activate = true;
             anim.Play("Evolve2");
+
+				if (canScale) {
+
+					scaleX = transform.localScale.x;
+					scaleY = transform.localScale.y;
+
+					if (facingRight) {
+						transform.localScale = new Vector2 (scaleX + scaleValue, scaleY + scaleValue);
+						canScale = false;
+					} 
+					if (!facingRight) {
+						transform.localScale = new Vector2 (scaleX - scaleValue, scaleY + scaleValue);
+						canScale = false;
+					}
+				}
 
             if (Stage3activate)
             {
