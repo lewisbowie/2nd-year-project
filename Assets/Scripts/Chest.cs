@@ -21,7 +21,7 @@ public class Chest : MonoBehaviour
       
        
 
-            if (Input.GetKeyDown(KeyCode.O) && !opened)
+            if (Input.GetKeyDown(KeyCode.E) && !opened)
             {
                 OpenChest();
             }
